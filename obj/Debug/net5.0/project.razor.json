@@ -15624,6 +15624,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\PROGRAMACIÓN I\\pc03\\Views\\Solicitud\\Listar.cshtml",
+      "TargetPath": "Views\\Solicitud\\Listar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\PROGRAMACIÓN I\\pc03\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -15636,6 +15641,11 @@
     {
       "FilePath": "c:\\PROGRAMACIÓN I\\pc03\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\PROGRAMACIÓN I\\pc03\\Views\\Solicitud\\Registrar.cshtml",
+      "TargetPath": "Views\\Solicitud\\Registrar.cshtml",
       "FileKind": "mvc"
     },
     {
