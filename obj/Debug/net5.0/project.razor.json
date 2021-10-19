@@ -15639,6 +15639,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\PROGRAMACIÓN I\\pc03\\Views\\Shared\\_Solicitud.cshtml",
+      "TargetPath": "Views\\Shared\\_Solicitud.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\PROGRAMACIÓN I\\pc03\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"

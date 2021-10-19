@@ -49,3 +49,4 @@ C:\PROGRAMACIÓN I\pc03\obj\Debug\net5.0\pc03.pdb
 C:\PROGRAMACIÓN I\pc03\obj\Debug\net5.0\pc03.genruntimeconfig.cache
 C:\PROGRAMACIÓN I\pc03\obj\Debug\net5.0\Razor\Views\Solicitud\Listar.cshtml.g.cs
 C:\PROGRAMACIÓN I\pc03\obj\Debug\net5.0\Razor\Views\Solicitud\Registrar.cshtml.g.cs
+C:\PROGRAMACIÓN I\pc03\obj\Debug\net5.0\Razor\Views\Shared\_Solicitud.cshtml.g.cs

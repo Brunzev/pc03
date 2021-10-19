@@ -1,48 +1,55 @@
 @model Solicitud
 @{
+    Layout = "_Solicitud";
     ViewData["Tittle"] = "REGISTRO";
     List<SelectListItem> items = (List<SelectListItem>)@ViewBag.items;
 }
 
 <h1>@ViewData["Tittle"]</h1>
 
-<h1>REGISTRAR PRODUCTO</h1>
 
 <form asp-controller="Solicitud" asp-action="Registrar" method="post">
 
     <div class="form-group">
         <label asp-for="nombre">NOMBRE: </label>
         <input type="text" asp-for="nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="nombre"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="foto">FOTO: </label>
         <input type="text" asp-for="foto" class="form-control">
+        <span class="text-danger" asp-validation-for="foto"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="descripcion">DESCRIPCIÓN: </label>
         <textarea type="text" asp-for="descripcion" class="form-control"></textarea>
+        <span class="text-danger" asp-validation-for="descripcion"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="precio">PRECIO: </label>
         <input type="text" asp-for="precio" class="form-control">
+        <span class="text-danger" asp-validation-for="precio"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="celular">CELULAR: </label>
         <input type="text" asp-for="celular" class="form-control">
+        <span class="text-danger" asp-validation-for="celular"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="lugar">LUGAR: </label>
         <input type="text" asp-for="lugar" class="form-control">
+        <span class="text-danger" asp-validation-for="lugar"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="comprador">COMPRADOR: </label>
         <input type="text" asp-for="comprador" class="form-control">
+        <span class="text-danger" asp-validation-for="comprador"></span>
     </div>
 
     <div class="form-group">
@@ -52,7 +59,7 @@
         </div>  
     </div>
 
-    <button class="btn btn-info">ENVIAR</button>
+    <button class="btn btn-primary">ENVIAR</button>
 
 </form>
 

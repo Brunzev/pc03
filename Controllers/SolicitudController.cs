@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using pc03.Models;
 using pc03.Data;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace pc03.Controllers
 {
@@ -31,15 +31,24 @@ namespace pc03.Controllers
         }
 
         [HttpPost]
-        public IActionResult Registrar(Solicitud solicitud, int datos){
+        public IActionResult Registrar(Solicitud solicitudCompra, int datos){
             if(ModelState.IsValid){
                 var categoria = _context.DataCategoria.Find(datos);
-                solicitud.categoria = categoria;
-                _context.Add(solicitud);
+                solicitudCompra.categoria = categoria;
+                _context.Add(solicitudCompra);
                 _context.SaveChanges();
                 return RedirectToAction("Listar");
             }
-            return View(solicitud);
+            var categorias = _context.DataCategoria.ToList();
+            List<SelectListItem> items = categorias.ConvertAll(d =>{
+                return new SelectListItem(){
+                    Text = d.nombre,
+                    Value = d.id.ToString(),
+                    Selected = false
+                };
+            });
+            ViewBag.items = items;
+            return View(solicitudCompra);
         }
 
         public IActionResult Listar(){
